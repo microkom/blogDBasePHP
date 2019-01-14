@@ -1,0 +1,343 @@
+
+/* 
+Created on : 28-oct-2018, 2:59:13
+Author     : german
+*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+
+/* Style the body */
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+article{
+    text-align: justify;
+    border: 1px solid lightgray;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: lightcyan;
+}
+article h3 a, h4 a, a h5{
+
+    text-decoration: none;
+    color: #355C7D;
+}
+article>ul>li>h3, article>ul>li>ul>li>h3, article>ul>li>ul>li{
+	margin: 0;
+}
+.inline{
+    display: inline-block;
+    border: 1px solid purple;
+}
+#salir{
+    font-size:inherit;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    color:papayawhip;
+    border: none;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+legend{
+    width: inherit;
+}
+/* Change color on hover */
+#salir:hover {
+    background-color: white;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Active/current link */
+#salir:active {
+    /*background-color: #f42;*/
+    color: black;
+}
+
+/*botones de edicion y borrado de entradas*/
+article aside{
+    margin : 0 0 0 1em;
+    float:right;
+    padding: 0.5em;
+}
+/*usuario, fecha y hora de entradas*/
+article div{
+    padding-right: 15px;
+    padding-left: 3px;
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 500;
+
+
+}
+
+/* Header/logo Title */
+.header {
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    padding: 2rem;
+    text-align: center;
+    background:#355C7D;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.header img{
+	height: 90px;
+}
+.header a{
+    text-decoration: none; 
+    color:#ffcf79;
+}
+.header a:hover {
+    color: white;
+}
+
+/*Padding */
+.messCent{
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 1em;
+}
+.center {
+  text-align: center;
+}
+
+
+.activo{ 
+	border: 2px solid orange !important;
+	background-color: papayawhip!important;
+	color: #333 !important;
+	
+}
+
+/* Sticky menu - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the menu will inherit default position */
+.menu {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+.pagina{
+	padding: 8px 14px;
+	border: 1px solid #355C7D;
+	background-color: #355C7D;
+	color:papayawhip;
+}
+.pagina:disabled{
+	background-color: gray !important;
+	color: black !important;
+}
+
+/* Style the navigation bar links */
+.menu a {
+    float: left;
+    display: block;
+    color: papayawhip;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    
+  
+    
+}
+
+/* Change color on hover */
+.menu a:hover, .pagina:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Active/current link */
+.menu a:active, .pagina:active {
+    /*background-color: #f42;*/
+    color: white;
+}
+.menuL {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+}
+
+/* Style the navigation bar links */
+.menuL a {
+    margin; 14px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 6px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: papayawhip;
+}
+
+/* Change color on hover */
+.menuL a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Active/current link */
+.menuL a:active {
+    background-color: #666;
+    color: white;
+}
+
+/* Column container */
+.main {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #355C7D;
+    padding: 20px;
+    color:papayawhip;
+}
+.side a{
+    text-decoration: none;
+    color:white;
+}
+.side a:hover{
+    text-decoration: none;
+    color:papayawhip;
+}
+
+
+/* Main column */
+.principal {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+    padding: 3px;
+    color:papayawhip;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #355C7D;
+    text-align: center;
+}
+
+.fright{
+    float:right;
+}
+
+.search{
+    padding: 4px 12px;
+    text-align: center;
+    background-color:#ffcf79;
+    font-size: 0.75em;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display:inline;
+}
+
+
+.center{
+    text-align: center;
+}
+.aut{
+    margin: 0 auto;
+}
+.width60em{
+    width:60em;
+    margin:0 auto;
+}
+.width40em{
+    width:40em;
+    margin:0 auto;
+}
+.error{
+    color:red;
+}
+.right{
+    text-align: right;
+}
+.w100, .front input[type=text]{
+   font-size: 0.8rem;
+}
+.width100{
+    width: 95%;
+}
+
+.front{
+    display:table;
+    margin:auto;
+}
+.front input[type=text],.front input[type=password],.front label{
+    display:table-cell;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+}
+.opcionesMenuEntrada{
+    display: none;
+}
+.menuEntrada:hover .opcionesMenuEntrada{
+    display:block;
+    flex-direction: column;
+    
+}
+table{
+	border-collapse: collapse;
+}
+table td{
+	padding: 6px;
+}
+
+textarea{
+    width: 95%;
+    height: 100px;
+   
+}
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .main {   
+        flex-direction: column;
+    }
+    .header {
+        font-size: 1.5em;
+        padding: 1.5em;
+    }
+    .side {
+        font-size: 0.8em;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .menu a {
+        float: none;
+        width: 100%;
+    }
+    .header {
+        font-size: 1.5em;
+        padding: 1.3em;
+    }
+    .side {
+        font-size: 0.8em;
+    }
+}
